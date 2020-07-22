@@ -1,0 +1,127 @@
+
+@import '../assets/sass/config';
+
+$description: #5E5E66;
+
+$tablet: 700px;
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+  }
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.header {
+
+    &__container {
+       
+
+    }
+
+    &__content {
+        margin: 4em auto;
+        width: 70%;
+        text-align: center;
+        
+        &--three {
+           text-align: center;
+
+           &__group {
+               display: flex;
+               justify-content: space-between;
+            }
+        }
+    }
+
+    &__title {
+        color: $primary-color;
+        font-weight: 800;
+        font-size: 72px;
+        line-height: 124%;
+
+        @include tablet{
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 100%;
+        }
+    }
+
+    &__title-two {
+        font-weight: 800;
+        font-size: 38px;
+        line-height: 70px;
+        letter-spacing: 0.03em;
+    }
+
+    &__title-three {
+        font-family: Gilroy-Bold;
+        font-size: 24px;
+        line-height: 37px;
+        letter-spacing: 0.03em;
+        }
+
+    &__text {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 34px;
+        letter-spacing: 0.03em;
+    }
+        
+    &__description {
+        color: $description;
+    }
+
+    &__info {
+        color: $description;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__box {
+        margin-top: 50px;
+        margin: 4em auto;
+        width: 80vw;
+        height: 100vh;
+        background-color: rgba(0,0,0, .9);
+        text-align: center;
+
+        @include tablet {
+            height: 50vh;
+        }
+    }
+
+}
+
+.main {
+
+    background-color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__container {
+        margin: 4em auto;
+        width: 50%;
+       
+    }
+
+    &__content {
+       
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 42px;
+    }
+    
+    &__description {
+        color: $description;
+    }
+}

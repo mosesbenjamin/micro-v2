@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  font-family: "gilroybold";
+  src: url("../fonts/gilroy-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gilroylight";
+  src: url("../fonts/gilroy-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gilroysemibold";
+  src: url("../fonts/gilroy-semibold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "gilroybold";
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header__content {
+  margin: 4em auto;
+  width: 70%;
+  text-align: center;
+}
+.header__content--three {
+  text-align: center;
+}
+.header__content--three__group {
+  display: flex;
+  justify-content: space-between;
+}
+.header__title {
+  color: #1A1B2D;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 124%;
+}
+@media (max-width: 700px) {
+  .header__title {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 100%;
+  }
+}
+.header__title-two {
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 70px;
+  letter-spacing: 0.03em;
+}
+.header__title-three {
+  font-family: Gilroy-Bold;
+  font-size: 24px;
+  line-height: 37px;
+  letter-spacing: 0.03em;
+}
+.header__text {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 0.03em;
+}
+.header__description {
+  color: #5E5E66;
+}
+.header__info {
+  color: #5E5E66;
+  font-size: 14px;
+  line-height: 20px;
+}
+.header__box {
+  margin-top: 50px;
+  margin: 4em auto;
+  width: 80vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .header__box {
+    height: 50vh;
+  }
+}
+
+.main {
+  background-color: #F4F4F4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main__container {
+  margin: 4em auto;
+  width: 50%;
+}
+.main__title {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 42px;
+}
+.main__description {
+  color: #5E5E66;
+}
+
+/*# sourceMappingURL=index.css.map */
