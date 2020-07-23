@@ -1,5 +1,78 @@
 #home {
-
-  //write inside here only
-  
+  //
 }
+
+$tablet: 700px;
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+  }
+
+.dashboard {
+  &__container{
+    
+    &__img {
+      height: 30em;
+    }
+  }
+}
+
+.item-four {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-five {
+    margin-top: 4em;
+    padding: 0 8em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include tablet{
+      padding: 0;
+  }
+
+    &__image-container{
+
+        display: flex;
+        justify-content: center;
+        &__img {
+          height: 30em;
+        }
+    }
+}
+
+.item-six {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.item-seven {
+  margin-top: 4em;
+  padding: 0 8em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include tablet{
+    padding: 0;
+  }
+
+  &__image-container{
+
+      display: flex;
+      justify-content: center;
+      &__img {
+        height: 10em;
+
+        @include tablet{
+          height: 3em;
+        }
+      }
+  }
+}
+
+
