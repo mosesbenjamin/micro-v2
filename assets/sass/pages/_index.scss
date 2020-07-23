@@ -1,5 +1,7 @@
 #home {
-  //
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
 }
 
 $tablet: 700px;
@@ -22,6 +24,18 @@ $tablet: 700px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  &__content {
+    border-right: 0.01em solid lighten($color: $primary-color, $amount: 70);
+  }
+
+  &__header {
+    overflow: hidden;
+  }
+
+  &__description {
+    color: darken($color: $tetiary-color, $amount: 40);
+  }
 }
 
 .item-five {
@@ -30,6 +44,8 @@ $tablet: 700px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: $tetiary-color;
+
     @include tablet{
       padding: 0;
   }
@@ -48,6 +64,10 @@ $tablet: 700px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+
+  &__icon {
+    color: darken($color: $secondary-color, $amount: 50);
+  }
 }
 
 .item-seven {
@@ -56,6 +76,16 @@ $tablet: 700px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: $tetiary-color;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img {
+    height: 30em;
+  }
 
   @include tablet{
     padding: 0;
@@ -66,12 +96,71 @@ $tablet: 700px;
       display: flex;
       justify-content: center;
       &__img {
-        height: 10em;
+        height: 6em;
 
         @include tablet{
           height: 3em;
         }
       }
+  }
+}
+.item-eight {
+  background-color: $tetiary-color;
+
+  &--nine {
+    background-color: $secondary-color;
+  }
+}
+
+.item-nine {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: center;
+  background-color: $tetiary-color;
+
+  &__content {
+    padding-left: 13em;
+
+    @include tablet{
+      padding-left: 10%;
+    }
+
+  }
+
+  &__item {
+    background-color: $secondary-color;
+    padding-left: 2em;
+    padding-bottom: 3em;
+
+    &__link {
+      color: $primary-color;
+      background-color: $tetiary-color;
+      padding:0  1em;
+
+      &__link:hover{
+            text-decoration: none;
+      }
+    }
+  }
+
+  &__button {
+      color: $secondary-color;
+      background-color: $primary-color;
+      font-size: 1.3em;
+      padding: 0 2%;
+      text-align: center;
+  }
+}
+
+.item-ten {
+
+  &__text {
+    text-transform: uppercase;
+  }
+
+  &__other {
+    background-color: $secondary-color;
   }
 }
 
