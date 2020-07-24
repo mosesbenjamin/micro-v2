@@ -16,8 +16,28 @@ $tablet: 700px;
     
     &__img {
       height: 30em;
+
+      @include tablet{
+        height: 10em;
+    }
+    
     }
   }
+}
+
+.item-one {
+   &__header{
+     
+    @include tablet{
+      font-size: 1em;
+    }
+   }
+
+   &__text{
+    @include tablet{
+      font-size: 0.7em;
+    }
+   }
 }
 
 .item-four {
@@ -56,7 +76,12 @@ $tablet: 700px;
         justify-content: center;
         &__img {
           height: 30em;
+
+          @include tablet{
+            height: 10em;
         }
+        }
+
     }
 }
 
@@ -150,6 +175,10 @@ $tablet: 700px;
       font-size: 1.3em;
       padding: 0 2%;
       text-align: center;
+
+      @include tablet{
+        font-size: 0.8em;
+      }
   }
 }
 
@@ -157,6 +186,10 @@ $tablet: 700px;
 
   &__text {
     text-transform: uppercase;
+
+    @include tablet{
+      font-size: 0.7em;
+    }
   }
 
   &__other {
